@@ -13,7 +13,7 @@ function Header() {
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0 px-4">
           <Image
             src="/amazon_PNG.png"
-            width={150}
+            width={100}
             height={40}
             style={{ objectFit: "contain" }}
             className="cursor-pointer"
@@ -56,7 +56,21 @@ function Header() {
       </div>
 
       {/* BOTTOM NAV */}
-      <div>
+      <div className="flex items-center bg-amaxon_blue-light text-sm
+                    text-white space-x-3 pl-4">
+        <p className="link flex items-center p-2 px-5 font-bold">
+          <MenuIcon className="h-6 mr-1"/>
+          All
+        </p>
+        <p className="link">Prime Video</p>
+        <p className="link">Amazon Business</p>
+        <p className="link">Today's Deals</p>
+        <p className="link hidden lg:inline-flex">Electronics</p>
+        <p className="link hidden lg:inline-flex">Food & Grocery</p>
+        <p className="link hidden lg:inline-flex">Prime</p>
+        <p className="link hidden lg:inline-flex">Buy Again</p>
+        <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
+        <p className="link hidden lg:inline-flex">Health & Personal</p>
       </div>
     </header>
   )
